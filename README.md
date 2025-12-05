@@ -1,9 +1,10 @@
 # Muhammad Qasim
 
-<div align="center">
+<br>
+
 <div align="center">
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00F7FF&center=true&vCenter=true&random=false&width=700&lines=Systems+Architecture+%7C+Java+%26+C%2B%2B;Generative+AI+%7C+LSTMs+%7C+TensorFlow;Search+Engine+Engineering+%7C+DSA;Arch+Linux+%7C+Neovim+%7C+High+Agency)
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00F7FF&center=true&vCenter=true&random=false&width=720&lines=Systems+Architecture+%7C+Java+%26+C%2B%2B;Generative+AI+%7C+LSTMs+%7C+TensorFlow;Search+Engine+Engineering+%7C+DSA;Arch+Linux+%7C+Neovim+%7C+High+Agency)
 
 [![Email](https://img.shields.io/badge/Email-Contact_Me-333333?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amkassim444@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-qasim-967a6a332)
@@ -13,91 +14,107 @@
 
 ---
 
-### ⚡ The Philosophy: First Principles Engineering
-I am a Software Engineer who builds **systems**, not just scripts.
-My obsession lies in deconstructing black boxes—from implementing Search Indices in Java without libraries to building Generative AI architecture from raw math.
+## ⚡ The Philosophy: First Principles Engineering
+I build **systems**, not scripts.  
+My craft revolves around understanding the internals — from text generation networks built from scratch to distributed search pipelines engineered without external libraries.
 
-* **Core Focus:** High-Performance Systems (Java/C++) & Deep Learning (TensorFlow).
-* **The Workflow:** Arch Linux (Hyprland). Neovim. Git. I optimize for speed, sovereignty, and CLI mastery.
-* **Current State:** Transitioning from Classical Machine Learning to **Generative AI & LLMs**.
+- **Core Focus:** High-Performance Systems (Java/C++) & Deep Learning (TensorFlow)  
+- **Workflow:** Arch Linux (Hyprland), Neovim, Git — streamlined for speed, sovereignty, and CLI mastery  
+- **Current Path:** Moving from classical ML → **Generative AI & LLM Systems**
 
 ---
 
-## 🚀 Featured Engineering Projects
-*Click the dropdowns to view the architecture.*
+# 🚀 Featured Engineering Projects
+*Click each section to expand the internals.*
 
-<details open>
-<summary><b>🤖 Baby GPT — Generative AI Engine (Deep Learning)</b><br><i>Teaching a Neural Network to "Dream" text from scratch.</i></summary>
-<br>
-
-**The Challenge:** Build a Generative Language Model without using pre-trained weights (like GPT-4). Teach a machine English spelling, grammar, and context purely through probability.
-**The Architecture:**
-* **Model:** Built a **Dual-Stack LSTM** (Long Short-Term Memory) network using `TensorFlow` & `Keras`.
-* **Data Pipeline:** Processed the *Alice in Wonderland* corpus with a custom character-level tokenizer.
-* **Inference:** Implemented a custom **Temperature Sampling** loop to control the stochasticity (creativity) of the model.
-* **Result:** The model learned to form coherent words, use punctuation, and generate "hallucinated" English sentences that mimic the style of Lewis Carroll.
-
-**Stack:** `Python` `TensorFlow` `LSTMs` `NumPy` `Generative AI`
-</details>
+---
 
 <details>
-<summary><b>🔍 DevShelf — Distributed Search Engine (Java & Algorithms)</b><br><i>Rebuilding Information Retrieval from First Principles.</i></summary>
+<summary><b>🤖 Baby GPT — Generative Text Engine</b><br><i>A neural network that learns to "dream" English from scratch.</i></summary>
 <br>
 
-**The Challenge:** Build a scalable search engine for 200+ books without using Lucene or ElasticSearch.
-**The Engineering:**
-* **Indexing Strategy:** Engineered a **Positional Inverted Index** (`HashMap<String, List<Integer>>`) for O(1) lookups and phrase proximity queries.
-* **Ranking:** Designed a hybrid scoring system: `TF-IDF` (Vector Relevance) + `Cosine Similarity`.
-* **Optimization:** Implemented **Tries** for low-latency autocomplete (O(L) complexity).
-* **Architecture:** Zero local storage dependency; streams book metadata and covers dynamically from the cloud.
+### 🧩 Challenge  
+Train a Generative Language Model without using any pre-trained weights or external corpora — pure character-level learning.
+
+### 🏗️ Architecture  
+- **Model:** Dual-Stack **LSTM** engineered in TensorFlow/Keras  
+- **Tokenizer:** Custom character-level tokenizer over *Alice in Wonderland*  
+- **Inference Engine:** Custom **Temperature Sampling** loop  
+- **Outcome:** Learned grammar, punctuation, and stylistic mimicry using raw probability distributions  
+
+**Stack:** `Python` `TensorFlow` `Keras` `NumPy` `Generative AI`
+</details>
+
+---
+
+<details>
+<summary><b>🔍 DevShelf — Distributed Search Engine</b><br><i>Reinventing IR without Lucene/Elastic.</i></summary>
+<br>
+
+### 🧩 Challenge  
+Index and rank 200+ books with zero dependency on search libraries.
+
+### 🏗️ Engineering  
+- **Indexing:** Custom **Positional Inverted Index** for O(1) lookups  
+- **Ranking:** Hybrid **TF-IDF + Cosine Similarity** engine  
+- **Autocomplete:** Trie-based suggestions with O(L) complexity  
+- **Cloud Integration:** Streams book metadata & covers dynamically  
 
 **Stack:** `Java` `DSA` `Tries` `TF-IDF` `Cloud Streaming`
 </details>
 
-<details>
-<summary><b>🧠 Sentiment Filter — "The Negation Paradox" (NLP)</b><br><i>Pushing Logistic Regression to 91% Accuracy.</i></summary>
-<br>
-
-**The Challenge:** Standard "Bag of Words" models fail at context. They see *"Not good"* as positive because of the word *"good"*.
-**The Solution:**
-* **Feature Engineering:** Built a custom pre-processor to fuse negation tokens (e.g., *"not good"* → *"NOT_good"*).
-* **Vectorization:** Moved from simple counts to **TF-IDF with Bigrams** to capture phrase-level nuance.
-* **Result:** Achieved **91% Accuracy** on the IMDB dataset, proving that better data engineering beats model complexity.
-
-**Stack:** `Python` `Scikit-Learn` `Logistic Regression` `NLP`
-</details>
+---
 
 <details>
-<summary><b>👁️ The Digital Eye — Computer Vision (CNNs)</b><br><i>Handwritten Digit Recognition.</i></summary>
+<summary><b>🧠 Sentiment Filter — The Negation Paradox</b><br><i>Breaking the “not good” classification failure.</i></summary>
 <br>
 
-**The Task:** Teach a machine to "see" and identify handwritten digits (MNIST).
-**The Implementation:**
-* **Pipeline:** Implemented pixel normalization (0-255 → 0-1) to optimize gradient descent.
-* **Regularization:** Utilized **Dropout (0.2)** layers to prevent overfitting and force feature generalization.
-* **Performance:** Achieved **98% Accuracy** on unseen test data.
+### 🧩 Problem  
+Traditional Bag-of-Words models misinterpret negated phrases.
 
-**Stack:** `TensorFlow` `Keras` `Computer Vision` `Matplotlib`
-</details>
+### 🏗️ Solution  
+- **Feature Engineering:** Negation fusion (e.g., `"not good"` → `"NOT_good"`)  
+- **Vectorization:** **TF-IDF + Bigrams**  
+- **Result:** Achieved **91% accuracy** on IMDB sentiment analysis  
 
-<details>
-<summary><b>🏦 MQ Banking Core — High-Performance System (C++)</b><br><i>Production-grade financial architecture.</i></summary>
-<br>
-
-**The Engineering:**
-* **Integrity:** Custom file-based database with transaction logging and ACID-compliance properties.
-* **Security:** Implemented memory-safe operations to prevent buffer overflows and data corruption.
-* **Design:** Strict adherence to **SOLID principles** and OOP patterns.
-
-**Stack:** `C++` `Qt Framework` `File I/O` `Memory Management`
+**Stack:** `Python` `Scikit-Learn` `NLP` `TF-IDF`
 </details>
 
 ---
 
-## 🛠️ The Arsenal
+<details>
+<summary><b>👁️ The Digital Eye — CNN Vision System</b><br><i>MNIST digit recognition.</i></summary>
+<br>
+
+### 🏗️ Implementation  
+- Normalized pixel intensities  
+- Applied regularization via **Dropout (0.2)**  
+- Engineered a compact CNN that generalizes well  
+- Achieved **98% test accuracy**
+
+**Stack:** `TensorFlow` `Keras` `Computer Vision`
+</details>
+
+---
+
+<details>
+<summary><b>🏦 MQ Banking Core — High-Performance C++ System</b><br><i>Production-grade financial architecture.</i></summary>
+<br>
+
+### 🧩 Engineering Principles  
+- **Custom File-Based DB:** ACID-style integrity via structured logs  
+- **Security:** Memory-safe operations preventing overflow/corruption  
+- **Design:** Fully OOP, SOLID, modular, extensible  
+
+**Stack:** `C++` `Qt` `Memory Management` `File I/O`
+</details>
+
+---
+
+# 🛠️ The Arsenal
 
 | **Domain** | **Technology Stack** |
-| :--- | :--- |
+|-----------|----------------------|
 | **Deep Learning** | ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white) ![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat&logo=keras&logoColor=white) ![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat&logo=numpy&logoColor=white) |
 | **Systems & Backend** | ![Java](https://img.shields.io/badge/-Java-ED8B00?style=flat&logo=openjdk&logoColor=white) ![C++](https://img.shields.io/badge/-C++-00599C?style=flat&logo=cplusplus&logoColor=white) ![Algorithms](https://img.shields.io/badge/-DSA-lightgrey?style=flat&logo=codeforces&logoColor=white) |
 | **Data Science** | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white) ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas&logoColor=white) ![Scikit](https://img.shields.io/badge/-Scikit_Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white) |
