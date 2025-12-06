@@ -25,9 +25,7 @@ My craft revolves around understanding the internals — from text generation ne
 ---
 
 # 🚀 Featured Engineering Projects
-*Click each section to expand the internals.*
 
----
 
 <details>
 <summary><b>🤖 Baby GPT — Generative Text Engine</b><br><i>A neural network that learns to "dream" English from scratch.</i></summary>
