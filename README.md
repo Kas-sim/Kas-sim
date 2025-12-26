@@ -32,7 +32,7 @@ My work sits at the intersection of **High-Performance Computing**, **Distribute
 ## 🚀 Flagship Engineering
 
 ### 📚 [DevShelf: Distributed Search Engine](https://github.com/Kas-sim/DevShelf)
-> [Read the Case Study](https://kas-sim.github.io/projects/devshelf) | _I didn't use ElasticSearch. I built the engine._
+> [Read the Case Study](https://kas-sim.github.io/projects/devshelf) | _I didn't use ElasticSearch. I built the search engine from scratch._
 
 A production-grade vertical search engine for Computer Science literature, engineered from scratch without external dependencies (No Lucene, No Solr).
 * **The Architecture:** Split-Stack design with **Offline Indexing** (Batch Processing) and **Online Querying** (Memory-Mapped I/O).
