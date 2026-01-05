@@ -77,6 +77,7 @@ My stack is optimized for velocity, control, and deep system access.
 
 <br>
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Kas-sim&theme=tokyonight&hide_border=true&background=0D1117&stroke=00F7FF&ring=00F7FF&fire=FF6B6B&currStreakLabel=00F7FF)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=Kas-sim&theme=highcontrast&hide_border=true)](https://git.io/streak-stats)
+
 
 </div>
