@@ -77,8 +77,6 @@ My stack is optimized for velocity, control, and deep system access.
 
 <br>
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=Kas-sim&theme=highcontrast&hide_border=true)](https://git.io/streak-stats)
-<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=Kas-sim&theme=highcontrast&hide_border=true" alt="GitHub Streak" /></a>
-
+[![GitHub Streak](https://streak-stats.demolab.com/?user=Kas-sim)](https://git.io/streak-stats)
 
 </div>
