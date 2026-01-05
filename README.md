@@ -77,11 +77,7 @@ My stack is optimized for velocity, control, and deep system access.
 
 <br>
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=Kas-sim&theme=highcontrast&hide_border=true)](https://github.com/Kas-sim)
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Kas-sim&show_icons=true&theme=highcontrast)](https://github.com/Kas-sim)
-
-
+[![GitHub Streak](https://streak-stats.demolab.com?user=Kas-sim&theme=highcontrast&hide_border=true)](https://github.com/Kas-sim/)
 
 
 </div>
