@@ -31,6 +31,18 @@ My work sits at the intersection of **High-Performance Computing**, **Distribute
 
 ## 🚀 Flagship Engineering
 
+### 🧠 [MQNotebook: Enterprise RAG System](https://github.com/Kas-sim/MQNotebook)
+> [Try the Live Demo](https://mqnotebook.streamlit.app/) | *Production-grade document intelligence. Not just another "Chat with PDF" wrapper.*
+
+A robust Retrieval-Augmented Generation engine designed to ingest the "messy" reality of enterprise data (Scanned PDFs, Speaker Notes, Excel) where standard parsers fail.
+* **The Pipeline:** "Hardcore" ingestion engine using **Tesseract OCR + Poppler** to force-read flattened documents and custom parsers for **PPTX Speaker Notes** and **Excel** structures.
+* **The Intelligence:** Hybrid Search Architecture combining **Local Vector Search (ChromaDB)** with **Cross-Encoder Reranking** (Top-15 to Top-5 filtering) for maximum precision before hitting the LLM.
+* **The Engineering:** Solved critical **Windows concurrency locks (`WinError 32`)** by implementing a dynamic, session-sharded database architecture for crash-free resets.
+
+[![Live App](https://img.shields.io/badge/🟢_Live_App-Streamlit_Cloud-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://mqnotebook.streamlit.app/)
+
+<br>
+
 ### 📚 [DevShelf: Distributed Search Engine](https://github.com/Kas-sim/DevShelf)
 > [Read the Case Study](https://kas-sim.github.io/projects/devshelf) | _I didn't use ElasticSearch. I built the search engine from scratch._
 
