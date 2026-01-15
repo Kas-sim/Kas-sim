@@ -1,91 +1,108 @@
 <div align="center">
 
 # Muhammad Qasim
-### Systems Architect | AI Engineer | Product Builder
+### Applied AI Engineer · Retrieval Systems (Search & RAG)
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00F7FF&center=true&vCenter=true&random=false&width=600&lines=Systems+Architecture+%7C+Java+%26+C%2B%2B;Generative+AI+%7C+TensorFlow+%7C+LLMs;Search+Engine+Engineering+%7C+DSA;Infrastructure+%7C+Bash+%7C+Automation)
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Retrieval+Systems+%7C+Search+%26+RAG;Classical+IR+%7C+Semantic+Search+%7C+Reranking;Systems+Engineering+%7C+Java+%7C+C%2B%2B+%7C+Python)
 
 <a href="https://kas-sim.github.io">
-  <img src="https://img.shields.io/badge/🚀_View_My_Portfolio-System_Architecture_&_AI-00F7FF?style=for-the-badge&logo=firefox&logoColor=black" height="35" />
+  <img src="https://img.shields.io/badge/🚀_Portfolio-Retrieval_Systems_&_AI-00F7FF?style=for-the-badge&logo=firefox&logoColor=black" height="34" />
 </a>
 
-<br>
-<br>
+<br><br>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-qasim-967a6a332)
-[![Email](https://img.shields.io/badge/Email-Contact_Me-333333?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amkassim444@gmail.com)
+[![Email](https://img.shields.io/badge/Email-Contact-333333?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amkassim444@gmail.com)
 
 </div>
 
 ---
 
-## ⚡ The Philosophy: Engineering from First Principles
-I don't just write scripts; I engineer **systems**.
-My work sits at the intersection of **High-Performance Computing**, **Distributed Systems**, and **Generative AI**. I believe that to truly master Software 2.0 (AI), one must first master the metal (Systems, Memory, and Infrastructure).
+## ⚡ Engineering Philosophy
 
-* **Core Focus:** Building Search Engines, Neural Networks, and Distributed Architectures from scratch.
-* **The Workbench:** Arch Linux (Hyprland), Neovim (Lua), and automated Bash/SSH workflows.
-* **Current Mission:** Bridging the gap between Classical Information Retrieval and Semantic Vector Search.
+I engineer **retrieval systems**, not demos.
 
----
+My work focuses on how information is:
+- ingested,
+- indexed,
+- retrieved,
+- ranked,
+- and safely exposed to downstream models.
 
-## 🚀 Flagship Engineering
+I specialize in **bridging classical Information Retrieval (IR)** with **modern Retrieval-Augmented Generation (RAG)** — designing systems that remain correct under real-world constraints.
 
-### 🧠 [MQNotebook: Enterprise RAG System](https://github.com/Kas-sim/MQNotebook)
-> [Try the Live Demo](https://mqnotebook.streamlit.app/) | *Production-grade document intelligence. Not just another "Chat with PDF" wrapper.*
-
-A robust Retrieval-Augmented Generation engine designed to ingest the "messy" reality of enterprise data (Scanned PDFs, Speaker Notes, Excel) where standard parsers fail.
-* **The Pipeline:** "Hardcore" ingestion engine using **Tesseract OCR + Poppler** to force-read flattened documents and custom parsers for **PPTX Speaker Notes** and **Excel** structures.
-* **The Intelligence:** Hybrid Search Architecture combining **Local Vector Search (ChromaDB)** with **Cross-Encoder Reranking** (Top-15 to Top-5 filtering) for maximum precision before hitting the LLM.
-* **The Engineering:** Solved critical **Windows concurrency locks (`WinError 32`)** by implementing a dynamic, session-sharded database architecture for crash-free resets.
-
-[![Live App](https://img.shields.io/badge/🟢_Live_App-Streamlit_Cloud-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://mqnotebook.streamlit.app/)
-
-<br>
-
-### 📚 [DevShelf: Distributed Search Engine](https://github.com/Kas-sim/DevShelf)
-> [Read the Case Study](https://kas-sim.github.io/projects/devshelf) | _I didn't use ElasticSearch. I built the search engine from scratch._
-
-A production-grade vertical search engine for Computer Science literature, engineered from scratch without external dependencies (No Lucene, No Solr).
-* **The Architecture:** Split-Stack design with **Offline Indexing** (Batch Processing) and **Online Querying** (Memory-Mapped I/O).
-* **The Math:** Custom **Positional Inverted Index** for **O(1)** retrieval, ranked by a hybrid formula (TF-IDF + User Popularity + Ratings).
-* **The Scale:** Streams content via a "Serverless CDN" architecture; deployed to 200+ users.
-
-[![Download](https://img.shields.io/badge/⬇️_Download_Windows_Installer-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/Kas-sim/DevShelf/releases/latest)
-
-<br>
-
-### 🤖 [Baby GPT: Generative Text Engine](https://github.com/Kas-sim/BabyGPT)
-> *A neural network that learns to "dream" English from scratch.*
-
-Trained a character-level Language Model on *Alice in Wonderland* without pre-trained weights or APIs.
-* **Deep Learning:** Dual-Stack **LSTM** (Long Short-Term Memory) network built in TensorFlow/Keras.
-* **Engineering:** Implemented custom **Temperature Sampling** to control generation stochasticity and a bespoke Tokenizer.
-* **Outcome:** The model learned grammar, punctuation, and stylistic mimicry from raw probability distributions.
+**Core belief:**  
+> *Language models are only as reliable as the retrieval systems feeding them.*
 
 ---
 
-## 🛠️ Specialized Systems & Research
+## 🚀 Flagship Systems
 
-| Project | Description | Stack |
-| :--- | :--- | :--- |
-| **[Sentiment Filter](https://github.com/Kas-sim)** | **NLP Engineering:** Solved the "Negation Paradox" (e.g., "not good") in Bag-of-Words models using Bigram fusion. Achieved **91% accuracy** on IMDB datasets. | `Python` `Scikit-Learn` `NLP` |
-| **[MQ Banking Core](https://github.com/Kas-sim)** | **High-Frequency C++:** A financial transaction system featuring a custom ACID-style file database, manual memory management, and secure pointer arithmetic. | `C++` `Qt` `File I/O` |
-| **[The Digital Eye](https://github.com/Kas-sim)** | **Computer Vision:** A custom CNN architecture optimized for MNIST digit recognition with Dropout regularization (98% Test Accuracy). | `TensorFlow` `Keras` `CV` |
+###  MQNotebook — Enterprise RAG System
+🔗 https://github.com/Kas-sim/MQNotebook  
+🌐 https://mqnotebook.streamlit.app/
+
+A **production-oriented RAG system** designed for the messy reality of enterprise documents — not clean PDFs.
+
+**What it demonstrates**
+- OCR-first ingestion (scanned PDFs, flattened text)
+- Structured parsing (PPTX speaker notes, Excel tables)
+- Hybrid retrieval (Vector search + Cross-Encoder reranking)
+- Local-first, BYOK security model
+- OS-level robustness (Windows file-lock mitigation)
+
+This system exists to solve **retrieval correctness**, not prompt cleverness.
 
 ---
 
-## 🏛️ The Arsenal
+### 🔍 DevShelf — Search Engine from First Principles
+🔗 https://github.com/Kas-sim/DevShelf  
+📖 https://kas-sim.github.io/systems/devshelf/
 
-My stack is optimized for velocity, control, and deep system access.
+A classical **vertical search engine** for Computer Science literature, built **without Lucene or ElasticSearch**.
+
+**What it demonstrates**
+- Positional inverted indices
+- Offline indexing vs online querying
+- TF-IDF and behavioral re-ranking
+- Deterministic, explainable retrieval pipelines
+
+DevShelf forms the **theoretical foundation** behind my RAG work.
+
+---
+
+## 🧪 Systems & Research Work
+
+| Project | Focus | Stack |
+|------|------|------|
+| **BabyGPT** | Character-level language modeling from scratch | `Python` `TensorFlow` `LSTM` |
+| **Sentiment Filter** | NLP edge cases (negation paradox) | `Python` `Scikit-Learn` |
+| **MQ Banking Core** | Low-level transactional system | `C++` `File I/O` |
+| **Digital Eye** | CNN-based vision system | `TensorFlow` `Keras` |
+
+These projects support my core specialization in **retrieval and applied AI systems**.
+
+---
+
+## 🏛️ Technical Arsenal
 
 <div align="center">
 
-| **Systems & Infrastructure** | **Artificial Intelligence** | **The Environment** |
-|:---:|:---:|:---:|
-| ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) **(Advanced)** | ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white) **(Keras/Layers)** | ![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white) **(Hyprland)** |
-| ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white) **(Memory Mgmt)** | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) **(NumPy/Pandas)** | ![Neovim](https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white) **(Lua Config)** |
-| ![Bash](https://img.shields.io/badge/Bash_&_SSH-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white) **(Automation)** | ![Scikit](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white) **(Regression)** | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) **(CI/CD)** |
+### Retrieval & AI
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-111111?style=for-the-badge)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge)
+![Transformers](https://img.shields.io/badge/LLMs-412991?style=for-the-badge)
+
+### Systems & Performance
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash_&_SSH-4EAA25?style=for-the-badge)
+
+### Environment
+![Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge)
+![Neovim](https://img.shields.io/badge/Neovim-57A143?style=for-the-badge)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge)
 
 <br>
 
