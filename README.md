@@ -5,13 +5,13 @@
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Retrieval+Systems+%7C+Search+%26+RAG;Classical+IR+%7C+Semantic+Search+%7C+Reranking;Systems+Engineering+%7C+Java+%7C+C%2B%2B+%7C+Python)
 
-<a href="https://kas-sim.github.io">
+<a href="https://qasimio.github.io">
   <img src="https://img.shields.io/badge/🚀_Portfolio-Retrieval_Systems_&_AI-00F7FF?style=for-the-badge&logo=firefox&logoColor=black" height="34" />
 </a>
 
 <br><br>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-qasim-967a6a332)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/qasimio)
 [![Email](https://img.shields.io/badge/Email-Contact-333333?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amkassim444@gmail.com)
 
 </div>
@@ -39,7 +39,7 @@ I specialize in **bridging classical Information Retrieval (IR)** with **modern 
 ## 🚀 Flagship Systems
 
 ###  MQNotebook — Enterprise RAG System
-🔗 https://github.com/Kas-sim/MQNotebook  
+🔗 https://github.com/qasimio/MQNotebook  
 🌐 https://mqnotebook.streamlit.app/
 
 A **production-oriented RAG system** designed for the messy reality of enterprise documents — not clean PDFs.
@@ -56,8 +56,8 @@ This system exists to solve **retrieval correctness**, not prompt cleverness.
 ---
 
 ### 🔍 DevShelf — Search Engine from First Principles
-🔗 https://github.com/Kas-sim/DevShelf  
-📖 https://kas-sim.github.io/systems/devshelf/
+🔗 https://github.com/qasimio/DevShelf  
+📖 https://qasimio.github.io/systems/devshelf/
 
 A classical **vertical search engine** for Computer Science literature, built **without Lucene or ElasticSearch**.
 
@@ -106,6 +106,6 @@ These projects support my core specialization in **retrieval and applied AI syst
 
 <br>
 
-[![GitHub Streak](https://streak-stats.demolab.com/?user=Kas-sim)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=qasimio)](https://git.io/streak-stats)
 
 </div>
