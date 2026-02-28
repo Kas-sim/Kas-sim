@@ -90,6 +90,7 @@ The classical IR knowledge from DevShelf directly informs the hybrid search desi
 ### foldr — File Automation CLI
 
 [![PyPI](https://img.shields.io/pypi/v/foldr?style=flat-square&color=2E6DA4)](https://pypi.org/project/foldr/)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/foldr?period=total&units=NONE&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/foldr)
 [![Downloads](https://img.shields.io/pypi/dm/foldr?style=flat-square&color=brightgreen)](https://pypi.org/project/foldr/)
 [![Python](https://img.shields.io/badge/python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)](https://pypi.org/project/foldr/)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/qasimio/foldr/blob/main/LICENSE)
