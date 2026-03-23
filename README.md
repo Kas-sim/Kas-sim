@@ -16,14 +16,6 @@
 
 ---
 
-## 💖 Support My Work
-
-If you find my open-source systems useful, consider supporting ongoing development and maintenance.
-
-[![Patreon](https://img.shields.io/badge/Patreon-qasimio-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://patreon.com/qasimio)
-
----
-
 ## What I Build
 
 I design and implement systems at the boundary between classical software engineering and applied AI — specifically:
