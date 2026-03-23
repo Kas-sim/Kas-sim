@@ -11,7 +11,6 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-qasimio.github.io-2E6DA4?style=for-the-badge&logo=firefox&logoColor=white)](https://qasimio.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-qasimio-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/qasimio)
 [![Email](https://img.shields.io/badge/Email-amkassim444%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amkassim444@gmail.com)
-[![Patreon](https://img.shields.io/badge/Patreon-qasimio-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://patreon.com/qasimio)
 
 </div>
 
@@ -21,7 +20,7 @@
 
 If you find my open-source systems useful, consider supporting ongoing development and maintenance.
 
-👉 https://patreon.com/qasimio
+[![Patreon](https://img.shields.io/badge/Patreon-qasimio-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://patreon.com/qasimio)
 
 ---
 
