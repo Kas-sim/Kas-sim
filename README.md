@@ -88,23 +88,40 @@ The classical IR knowledge from DevShelf directly informs the hybrid search desi
 
 ---
 
-### foldr — File Automation CLI
+### foldr — Intelligent File Automation CLI
 
 [![PyPI](https://img.shields.io/pypi/v/foldr?style=flat-square&color=2E6DA4)](https://pypi.org/project/foldr/)
 [![PyPI Downloads](https://static.pepy.tech/personalized-badge/foldr?period=total&units=NONE&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/foldr)
 [![Downloads](https://img.shields.io/pypi/dm/foldr?style=flat-square&color=brightgreen)](https://pypi.org/project/foldr/)
-[![Python](https://img.shields.io/badge/python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)](https://pypi.org/project/foldr/)
+[![Python](https://img.shields.io/badge/python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://pypi.org/project/foldr/)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue?style=flat-square)](https://github.com/qasimio/foldr)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/qasimio/foldr/blob/main/LICENSE)
 
-A published command-line tool for organizing large file collections by extension. Designed for data pipeline preparation — cleaning raw datasets before ML ingestion.
+A published CLI tool for organizing large, messy file collections by extension — with background watch mode, undo, deduplication, and custom category configuration. Designed for data pipeline preparation and keeping directories clean without any manual effort.
 
 ```bash
-pip install foldr
-foldr ~/Downloads --dry-run   # preview before any move
-foldr ~/Downloads             # execute
+pip install foldr                          # one install, everything included
+
+foldr ~/Downloads --preview               # see exactly what will happen
+foldr ~/Downloads                         # organize (preview → confirm → move)
+foldr ~/Downloads --recursive --depth 2   # include subdirectories
+foldr watch ~/Downloads                   # organize now + keep watching forever
+foldr undo                                # restore the last operation
 ```
 
-Engineering emphasis: dry-run architecture previews all I/O before execution; conflict resolution prevents overwrite; directories are never touched.
+Key engineering decisions:
+- **Background daemon architecture**: `foldr watch` spawns a detached OS-native subprocess; the calling terminal returns immediately while the daemon runs indefinitely, using inotify (Linux), kqueue (macOS), or ReadDirectoryChangesW (Windows) — 0% CPU when idle
+- **Initial scan + continuous watch**: daemon organizes all existing files on start, then reacts to every subsequent file creation, modification, or drag-in — no stale state, no one-time-only moves
+- **JSON undo system**: every organize operation writes an immutable history entry; `foldr undo` reverses any past operation independently without requiring sequential rollback
+- **Zero external dependency for core output**: ANSI rendering via ctypes (Win10+) with colorama fallback — no rich, no pyfiglet, no curses
+- **Conflict-safe moves**: resolves filename collisions by appending `_(1)`, `_(2)` — never overwrites
+- **Dry-run architecture**: previews the complete I/O plan before any file is touched; directories are never modified
+
+```
+foldr ~/Downloads --dedup keep-newest     # remove duplicate files (irreversible — always preview first)
+foldr history                             # browse past operations
+foldr config --edit                       # open category config in editor
+```
 
 **→ [github.com/qasimio/foldr](https://github.com/qasimio/foldr) · [pypi.org/project/foldr](https://pypi.org/project/foldr/)**
 
@@ -140,6 +157,8 @@ Engineering emphasis: dry-run architecture previews all I/O before execution; co
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Textual](https://img.shields.io/badge/Textual_TUI-FF69B4?style=for-the-badge)
+![Watchdog](https://img.shields.io/badge/Watchdog-4EAA25?style=for-the-badge)
+![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)
 
 </div>
 
