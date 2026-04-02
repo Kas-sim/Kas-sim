@@ -88,39 +88,39 @@ The classical IR knowledge from DevShelf directly informs the hybrid search desi
 
 ---
 
-### foldr — Intelligent File Automation CLI
+### FOLDR — Intelligent File Automation CLI
 
 [![PyPI](https://img.shields.io/pypi/v/foldr?style=flat-square&color=2E6DA4)](https://pypi.org/project/foldr/)
 [![PyPI Downloads](https://static.pepy.tech/personalized-badge/foldr?period=total&units=NONE&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/foldr)
-[![Downloads](https://img.shields.io/pypi/dm/foldr?style=flat-square&color=brightgreen)](https://pypi.org/project/foldr/)
 [![Python](https://img.shields.io/badge/python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://pypi.org/project/foldr/)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue?style=flat-square)](https://github.com/qasimio/foldr)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/qasimio/foldr/blob/main/LICENSE)
 
-A published CLI tool for organizing large, messy file collections by extension — with background watch mode, undo, deduplication, and custom category configuration. Designed for data pipeline preparation and keeping directories clean without any manual effort.
+A published CLI tool that keeps directories clean automatically — organizing **240+ file extensions** across **30+ categories** with background watch mode, full undo, deduplication, and custom category configuration. Designed for data pipeline preparation, ML dataset cleaning, and anyone who wants their Downloads folder to organize itself.
 
 ```bash
 pip install foldr                          # one install, everything included
 
-foldr ~/Downloads --preview               # see exactly what will happen
+foldr ~/Downloads --preview               # see the full plan before anything moves
 foldr ~/Downloads                         # organize (preview → confirm → move)
 foldr ~/Downloads --recursive --depth 2   # include subdirectories
 foldr watch ~/Downloads                   # organize now + keep watching forever
-foldr undo                                # restore the last operation
+foldr undo                                # restore the last operation instantly
 ```
 
 Key engineering decisions:
-- **Background daemon architecture**: `foldr watch` spawns a detached OS-native subprocess; the calling terminal returns immediately while the daemon runs indefinitely, using inotify (Linux), kqueue (macOS), or ReadDirectoryChangesW (Windows) — 0% CPU when idle
-- **Initial scan + continuous watch**: daemon organizes all existing files on start, then reacts to every subsequent file creation, modification, or drag-in — no stale state, no one-time-only moves
-- **JSON undo system**: every organize operation writes an immutable history entry; `foldr undo` reverses any past operation independently without requiring sequential rollback
-- **Zero external dependency for core output**: ANSI rendering via ctypes (Win10+) with colorama fallback — no rich, no pyfiglet, no curses
-- **Conflict-safe moves**: resolves filename collisions by appending `_(1)`, `_(2)` — never overwrites
-- **Dry-run architecture**: previews the complete I/O plan before any file is touched; directories are never modified
+- **Background daemon architecture**: `foldr watch` spawns a detached OS-native subprocess that runs indefinitely — using inotify (Linux), kqueue (macOS), or ReadDirectoryChangesW (Windows) — 0% CPU when idle; terminal returns immediately
+- **Two-phase watch pipeline**: initial full-directory scan on daemon start organizes existing files, then event-driven processing handles every subsequent arrival — files moved back to root are re-organized; no one-time-only moves
+- **JSON undo system**: every organize operation writes an immutable history entry; `foldr undo` reverses any operation independently — git-revert semantics applied to filesystem state
+- **240+ extensions, 30+ categories**: Documents, Images, Videos, Audio, Code, Archives, Executables, Databases, Machine Learning models, and more — all configurable via TOML
+- **Zero external dependency for output**: ANSI rendering via ctypes (Win10+) with colorama fallback — no rich, no pyfiglet, no curses
+- **Conflict-safe moves**: resolves filename collisions by appending `_(1)`, `_(2)` — never overwrites existing files
 
-```
-foldr ~/Downloads --dedup keep-newest     # remove duplicate files (irreversible — always preview first)
-foldr history                             # browse past operations
-foldr config --edit                       # open category config in editor
+```bash
+foldr ~/Downloads --dedup keep-newest     # remove duplicate files (preview first — irreversible)
+foldr history                             # browse all past operations with IDs
+foldr config --edit                       # open category config in your editor
+foldr watch ~/Downloads --recursive       # watch and organize subdirectories too
 ```
 
 **→ [github.com/qasimio/foldr](https://github.com/qasimio/foldr) · [pypi.org/project/foldr](https://pypi.org/project/foldr/)**
