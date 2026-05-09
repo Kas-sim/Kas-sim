@@ -183,6 +183,10 @@ foldr watch ~/Downloads --recursive       # watch and organize subdirectories to
 
 ---
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=qasimio&label=Profile%20Views&color=2E6DA4&style=flat" alt="profile views" />
+</p>
+
 <div align="center">
 
 [![GitHub Streak](https://streak-stats.demolab.com/?user=qasimio&theme=default&hide_border=true)](https://git.io/streak-stats)
